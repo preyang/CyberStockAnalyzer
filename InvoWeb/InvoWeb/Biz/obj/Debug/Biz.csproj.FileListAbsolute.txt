@@ -1,0 +1,7 @@
+K:\Users\OM\Desktop\InvoWeb\Biz\bin\Debug\Biz.dll
+K:\Users\OM\Desktop\InvoWeb\Biz\bin\Debug\Biz.pdb
+K:\Users\OM\Desktop\InvoWeb\Biz\bin\Debug\Data.dll
+K:\Users\OM\Desktop\InvoWeb\Biz\bin\Debug\Data.pdb
+K:\Users\OM\Desktop\InvoWeb\Biz\obj\Debug\ResolveAssemblyReference.cache
+K:\Users\OM\Desktop\InvoWeb\Biz\obj\Debug\Biz.dll
+K:\Users\OM\Desktop\InvoWeb\Biz\obj\Debug\Biz.pdb

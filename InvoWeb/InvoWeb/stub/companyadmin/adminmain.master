@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminmain.master.cs" Inherits="companyadmin_adminmain" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>
+     <asp:ContentPlaceHolder id="PageTitle" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+     <link href="../css/MainStyle.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="PageHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="Mainform" runat="server">
+    <div id="MainBody">
+    <div class="header" >
+     
+        <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/LoginPage.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span> !
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect"  OnLoggingOut="HeadLoginStatus_LoggingOut" LogoutText="Log Out" LogoutPageUrl="~/LoginPage.aspx"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+           </div>
+             <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                     <Items>
+                        <asp:MenuItem NavigateUrl="#" Text="Dashboard"/>
+                        <asp:MenuItem NavigateUrl="~/companyadmin/invoice.aspx" Text="Invoice"/>
+                        <asp:MenuItem NavigateUrl="~/companyadmin/items.aspx" Text="Product"/>
+                        <asp:MenuItem NavigateUrl="~/companyadmin/viewcompany.aspx" Text="Company"/>
+                        <asp:MenuItem NavigateUrl="#" Text="Report"/>
+                        <asp:MenuItem NavigateUrl="#" Text="Setting">
+                            <asp:MenuItem NavigateUrl="~/companyadmin/taxes.aspx" Text="Tax Manangement"/>
+                            <asp:MenuItem NavigateUrl="#" Text="Account Setting"/>
+                        </asp:MenuItem> 
+                    </Items>
+                </asp:Menu>
+            </div>
+        
+
+ 
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    <div class="footer">
+        Invoice System by <a href="#">InvoWebStub</a></div>
+
+    </div>
+    </div>
+</form>
+</body>
+</html>
+
+

@@ -1,0 +1,5 @@
+K:\Users\OM\Desktop\InvoWeb\Data\bin\Debug\Data.dll
+K:\Users\OM\Desktop\InvoWeb\Data\bin\Debug\Data.pdb
+K:\Users\OM\Desktop\InvoWeb\Data\obj\Debug\ResolveAssemblyReference.cache
+K:\Users\OM\Desktop\InvoWeb\Data\obj\Debug\Data.dll
+K:\Users\OM\Desktop\InvoWeb\Data\obj\Debug\Data.pdb
